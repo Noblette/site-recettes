@@ -76,8 +76,21 @@
       <div class="footer-col"><h4>Informations</h4><ul><li><a href="#">FAQ</a></li><li><a href="#">Confidentialité</a></li><li><a href="#">CGU</a></li></ul></div>
       <div class="footer-col"><h4>Suivez-nous</h4><ul><li><a href="#">📘 Facebook</a></li><li><a href="#">📷 Instagram</a></li><li><a href="#">▶️ YouTube</a></li></ul></div>
     </div>
-    <div class="footer-bottom"><span>© 2025 <a href="../index.html">Tasty Recipes</a>. Fait avec ❤️</span><span>Formation <a href="#">Orange Digital Center</a></span></div>
-  </div>
+        <div class="footer-bottom">
+        <div class="footer-copyright">
+            &copy; <span id="year"></span> 
+            <a href="../index.html">Tasty Recipes</a>. Fait avec ❤️
+        </div>
+        <div class="footer-odc">
+            Formation <a href="#">Orange Digital Center</a>
+        </div>
+    </div>
+
+    <script>
+        // Mise à jour automatique de l'année
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    </div>
 </footer>
 
 <div class="toast" id="toast"></div>
