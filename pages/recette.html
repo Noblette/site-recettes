@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Recette — Tasty Recipes</title>
+  <link rel="stylesheet" href="../css/global.css"/>
+  <link rel="stylesheet" href="../css/recette.css"/>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <a class="logo" href="../index.html">Tasty <span>Recipes</span></a>
+    <div class="nav-links">
+      <a href="../index.html">Accueil</a>
+      <a href="recettes.html" class="active">Recettes</a>
+      <a href="categories.html">Catégories</a>
+      <a href="apropos.html">À propos</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="nav-right">
+      <button class="nav-search-btn" onclick="window.location='recettes.html'">🔍</button>
+      <button class="btn-nav" onclick="window.location='contact.html'">Se connecter</button>
+    </div>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-nav" id="mobileNav">
+  <button class="mobile-nav-close" id="mobileNavClose">✕</button>
+  <a href="../index.html">Accueil</a><a href="recettes.html">Recettes</a><a href="categories.html">Catégories</a><a href="apropos.html">À propos</a><a href="contact.html">Contact</a>
+</div>
+
+<main class="main-content">
+  <div class="detail-hero">
+    <img id="d-img" alt=""/>
+    <div class="detail-hero-overlay"></div>
+    <a href="recettes.html" class="detail-back">← Retour aux recettes</a>
+  </div>
+
+  <div class="detail-content">
+    <div class="detail-top">
+      <h1 id="d-name"></h1>
+      <p id="d-desc"></p>
+      <div class="meta-row">
+        <div class="meta-pill">⏱ <strong id="d-time"></strong></div>
+        <div class="meta-pill">👥 <strong id="d-servings"></strong></div>
+        <div class="meta-pill">📊 <strong id="d-difficulty"></strong></div>
+        <div class="meta-pill">⭐ <strong id="d-rating"></strong></div>
+      </div>
+    </div>
+
+    <div class="detail-grid">
+      <div class="ingredients-box">
+        <h2 class="box-title">Ingrédients</h2>
+        <div id="d-ingredients"></div>
+      </div>
+      <div class="steps-box">
+        <h2 class="box-title">Préparation</h2>
+        <div id="d-steps"></div>
+      </div>
+    </div>
+
+    <div class="suggestions">
+      <p class="section-label">VOUS AIMEREZ AUSSI</p>
+      <h2 class="suggestions-title">Recettes similaires</h2>
+      <div class="recipes-grid" id="suggestions-grid"></div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand"><a class="logo" href="../index.html">Tasty <span>Recipes</span></a><p>Des recettes délicieuses pour tous les jours.</p></div>
+      <div class="footer-col"><h4>Navigation</h4><ul><li><a href="../index.html">Accueil</a></li><li><a href="recettes.html">Recettes</a></li><li><a href="categories.html">Catégories</a></li><li><a href="apropos.html">À propos</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h4>Informations</h4><ul><li><a href="#">FAQ</a></li><li><a href="#">Confidentialité</a></li><li><a href="#">CGU</a></li></ul></div>
+      <div class="footer-col"><h4>Suivez-nous</h4><ul><li><a href="#">📘 Facebook</a></li><li><a href="#">📷 Instagram</a></li><li><a href="#">▶️ YouTube</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© 2025 <a href="../index.html">Tasty Recipes</a>. Fait avec ❤️</span><span>Formation <a href="#">Orange Digital Center</a></span></div>
+  </div>
+</footer>
+
+<div class="toast" id="toast"></div>
+<script src="../js/global.js"></script>
+<script src="../js/recette.js"></script>
+</body>
+</html>
