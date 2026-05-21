@@ -59,3 +59,44 @@ nav a {
 nav ul li a:hover {
     color: #d9534f; /* Couleur rouge pour le hover */
 }
+/* Style de la section contact */
+.contact-section {
+    background-color: #ffffff; /* Couleur de fond claire pour la section contact */
+    padding: 30px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+/* Style des champs de saisie */
+.form-group input,
+.form-group textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: inherit;
+}
+/* Style du bouton d'envoi */
+.submit-btn {
+    background-color: #d9534f; /* Couleur rouge pour le bouton */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+.submit-btn:hover {
+    background-color: #c9302c; /* Couleur rouge plus foncée pour le hover */
+}

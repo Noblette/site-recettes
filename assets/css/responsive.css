@@ -1,0 +1,24 @@
+ /* Adaptations pour les ecrans de téléphones (max-width: 768px) */
+ @media screen and (max-width: 768px){
+    /* Mettre les liens du menu les uns sous les autres */
+    nav ul {
+        flex-direction: column; /* Aligne les liens verticalement */
+        align-items: center; /* Centrer les liens verticalement */
+    }
+    
+    nav li {
+        margin: 10px 0;
+    }
+    /* Réduire les espaces pour gagner de la place */
+    body {
+        padding: 10px;
+    }
+    main {
+        padding: 15px;
+        margin: 10px;
+    }
+    /* Ajuster la taille des grands titres */
+    h1 {
+        font-size: 1.8rem;
+    }
+}  
