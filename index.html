@@ -36,7 +36,7 @@
         <div class="hero-content">
             <h1>Découvrez les meilleures recettes maison</h1>
             <p>Des plats savoureux, faciles et rapides à préparer pour toute la famille</p>
-            <a href="recipes.html" class="btn-primary">Voir toutes les recettes</a>
+            <a href="./pages/recettes.html" class="btn-primary">Voir toutes les recettes</a>
         </div>
     </section>
 
@@ -82,20 +82,24 @@
                 <h4>Liens rapides</h4>
                 <ul>
                     <li><a href="index.html">Accueil</a></li>
-                    <li><a href="recipes.html">Recettes</a></li>
-                    <li><a href="about.html">A propos</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="./pages/recettes.html">Recettes</a></li>
+                    <li><a href="./about.html">A propos</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
                 </ul>
             </div>
             <div class="footer-col">
                 <h4>Contact</h4>
-                <p>Antananarivo, Madagascar</p>
-                <p>Email : contact@delicesmaison.mg</p>
+                <p>Fianarantsoa, Madagascar</p>
+                <p>Email : anjaranirinaomega@gmail.com</p>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Délices Maison - Tous droits réservés</p>
+        <p>&copy; <span id="year"></span> Délices Maison - Tous droits réservés</p>
         </div>
+
+        <script>
+        document.getElementById('year').textContent = new Date().getFullYear() ;
+        </script>
     </footer>
 
     <script src="assets/js/script.js"></script>
