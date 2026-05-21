@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez des recettes délicieuses et faciles à réaliser pour tous les jours.">
+    <title>Accueil - Délices Maison</title>
+    
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/indexResponsive.css">
+    <script src="assets/js/index.js" defer></script>
+</head>
+<body>
+
+    <!-- Header + Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h2>🍳 Délices Maison</h2>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Accueil</a></li>
+                <li><a href="./pages/recettes.html">Recettes</a></li>
+                <li><a href="./pages/categories.html">Catégories</a></li>
+                <li><a href="about.html">A propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+        <section class="hero">
+        <div class="hero-background">
+            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=1920&h=1080&fit=crop" 
+                alt="Recette délicieuse" 
+                class="hero-image active"
+                data-index="0">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1920&h=1080&fit=crop" 
+                alt="Plat savoureux" 
+                class="hero-image"
+                data-index="1">
+            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=1920&h=1080&fit=crop" 
+                alt="Nourriture saine" 
+                class="hero-image"
+                data-index="2">
+            <img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=1920&h=1080&fit=crop" 
+                alt="Nourriture saine" 
+                class="hero-image"
+                data-index="3">
+            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=1920&h=1080&fit=crop" 
+                alt="Nourriture saine" 
+                class="hero-image"
+                data-index="4">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1920&h=1080&fit=crop" 
+                alt="Nourriture saine" 
+                class="hero-image"
+                data-index="5">
+            <div class="hero-overlay"></div>
+            
+        </div>
+        
+        <div class="hero-content">
+            <h1>Découvrez les meilleures <span class="highlight">recettes maison</span></h1>
+            <p>Des plats savoureux, faciles et rapides à préparer pour toute la famille</p>
+            <a href="./pages/recettes.html" class="btn-primary">Explorer les recettes</a>
+        </div>
+        
+        <div class="hero-dots">
+            <span class="dot active" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
+            <span class="dot" data-index="3"></span>
+            <span class="dot" data-index="4"></span>
+            <span class="dot" data-index="5"></span>
+        </div>
+    </section>
+
+    <!-- Deux grandes cartes -->
+    <section class="quick-access">
+        <div class="access-grid">
+            
+            <!-- Carte Recettes -->
+            <a href="./pages/recettes.html" class="access-card recipes-card">
+                <div class="card-content">
+                    <span class="emoji">📖</span>
+                    <h2>Recettes</h2>
+                    <p>Découvrez toutes nos recettes détaillées</p>
+                    <span class="btn-link">Voir les recettes →</span>
+                </div>
+            </a>
+
+            <!-- Carte Catégories -->
+            <a href="./pages/categories.html" class="access-card categories-card">
+                <div class="card-content">
+                    <span class="emoji">📂</span>
+                    <h2>Catégories</h2>
+                    <p>Explorez par type de plat</p>
+                    <span class="btn-link">Voir les catégories →</span>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    
+        <footer>
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>🍳 Délices Maison</h3>
+                    <p>Partager notre passion pour la bonne cuisine.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Liens rapides</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="./pages/recettes.html">Recettes</a></li>
+                        <li><a href="./pages/categories.html">Catégories</a></li>
+                        <li><a href="about.html">A propos</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p>Fianarantsoa, Madagascar</p>
+                    <p>Email : delicemada@gmail.com</p>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p>
+                    &copy; <span id="year"></span> Délices Maison - Tous droits réservés
+                </p>
+                <p class="odc-formation">
+                    Formation <span class="odc">ODC</span> (Orange Digital Center) - Git &amp; GitHub
+                </p>
+            </div>
+        </footer>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
