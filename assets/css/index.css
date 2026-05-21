@@ -192,6 +192,12 @@ footer {
     color: #aaa;
 }
 
+.odc-formation {
+    color: #FF6600 !important;     /* Orange complet */
+    font-weight: 500;
+    font-size: 1rem;
+}
+
 /* ==================== RESPONSIVE ==================== */
 @media screen and (max-width: 768px) {
     .hero-content h1 {

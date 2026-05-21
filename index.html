@@ -68,33 +68,40 @@
     </section>
 
     <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <div class="footer-col">
-                <h3>🍳 Délices Maison</h3>
-                <p>Partager notre passion pour la bonne cuisine.</p>
+    
+        <footer>
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>🍳 Délices Maison</h3>
+                    <p>Partager notre passion pour la bonne cuisine.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Liens rapides</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="./pages/recettes.html">Recettes</a></li>
+                        <li><a href="./pages/categories.html">Catégories</a></li>
+                        <li><a href="about.html">A propos</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p>Fianarantsoa, Madagascar</p>
+                    <p>Email : delicemada@gmail.com</p>
+                </div>
             </div>
-            <div class="footer-col">
-                <h4>Liens rapides</h4>
-                <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="./pages/recettes.html">Recettes</a></li>
-                    <li><a href="./pages/categories.html">Catégories</a></li>
-                    <li><a href="about.html">A propos</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>Contact</h4>
-                <p>Fianarantsoa, Madagascar</p>
-                <p>Email : delicemada@gmail.com</p>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; <span id="year"></span> Délices Maison - Tous droits réservés</p>
-        </div>
-    </footer>
 
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p>
+                    &copy; <span id="year"></span> Délices Maison - Tous droits réservés
+                </p>
+                <p class="odc-formation">
+                    Formation <span class="odc">ODC</span> (Orange Digital Center) - Git &amp; GitHub
+                </p>
+            </div>
+        </footer>
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>
