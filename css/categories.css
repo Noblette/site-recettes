@@ -1,0 +1,22 @@
+/* ============================================
+   CATEGORIES.CSS — Styles propres à la page catégories
+   ============================================ */
+.main-content { padding-top: 68px; }
+.section { padding: 60px 24px; max-width: 1200px; margin: 0 auto; }
+
+.categories-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 20px; }
+.cat-card-big { position: relative; border-radius: var(--radius); overflow: hidden; aspect-ratio: 4/3; cursor: pointer; transition: var(--transition); box-shadow: 0 4px 20px rgba(0,0,0,0.3); }
+.cat-card-big:hover { transform: scale(1.03); box-shadow: 0 16px 40px rgba(0,0,0,0.5); }
+.cat-card-big img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+.cat-card-big:hover img { transform: scale(1.06); }
+.cat-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.1) 60%); }
+.cat-content { position: absolute; bottom: 0; left: 0; right: 0; padding: 24px; }
+.cat-content h3 { font-family: 'Syne', sans-serif; font-size: 1.2rem; font-weight: 800; color: var(--white); margin-bottom: 4px; }
+.cat-content p { font-size: 0.8rem; color: rgba(255,255,255,0.7); }
+
+.coming-soon { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 48px; text-align: center; margin-top: 48px; }
+.coming-soon-icon { font-size: 2.5rem; margin-bottom: 16px; }
+.coming-soon h2 { font-family: 'Syne', sans-serif; font-size: 1.6rem; font-weight: 800; color: var(--white); margin-bottom: 10px; }
+.coming-soon p { color: var(--gray); max-width: 480px; margin: 0 auto 24px; font-size: 0.9rem; }
+
+@media (max-width: 600px) { .categories-grid { grid-template-columns: 1fr 1fr; } }
