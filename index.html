@@ -7,7 +7,7 @@
     <title>Accueil - Délices Maison</title>
     
     <link rel="stylesheet" href="assets/css/index.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/indexResponsive.css">
 </head>
 <body>
 
@@ -37,23 +37,34 @@
         <div class="hero-content">
             <h1>Découvrez les meilleures recettes maison</h1>
             <p>Des plats savoureux, faciles et rapides à préparer pour toute la famille</p>
-            <a href="./pages/recettes.html" class="btn-primary">Voir toutes les recettes</a>
         </div>
     </section>
 
-    <!-- Recettes en vedette -->
-    <section class="featured">
-        <h2>Recettes à la une</h2>
-        <div class="recipes-grid" id="featured-recipes">
-            <!-- Générées par JavaScript -->
-        </div>
-    </section>
+    <!-- Deux grandes cartes -->
+    <section class="quick-access">
+        <div class="access-grid">
+            
+            <!-- Carte Recettes -->
+            <a href="./pages/recettes.html" class="access-card recipes-card">
+                <div class="card-content">
+                    <span class="emoji">📖</span>
+                    <h2>Recettes</h2>
+                    <p>Découvrez toutes nos recettes détaillées</p>
+                    <span class="btn-link">Voir les recettes →</span>
+                </div>
+            </a>
 
-    <!-- Teaser Catégories -->
-    <section class="categories-teaser">
-        <h2>Explorez par catégorie</h2>
-        <p>Découvrez toutes nos recettes classées par type de plat</p>
-        <a href="./pages/categories.html" class="btn-secondary">Voir toutes les catégories →</a>
+            <!-- Carte Catégories -->
+            <a href="./pages/categories.html" class="access-card categories-card">
+                <div class="card-content">
+                    <span class="emoji">📂</span>
+                    <h2>Catégories</h2>
+                    <p>Explorez par type de plat</p>
+                    <span class="btn-link">Voir les catégories →</span>
+                </div>
+            </a>
+
+        </div>
     </section>
 
     <!-- Footer -->
@@ -76,7 +87,7 @@
             <div class="footer-col">
                 <h4>Contact</h4>
                 <p>Fianarantsoa, Madagascar</p>
-                <p>Email : anjaranirinaomega@gmail.com</p>
+                <p>Email : delicemada@gmail.com</p>
             </div>
         </div>
         <div class="footer-bottom">
@@ -85,7 +96,6 @@
     </footer>
 
     <script>
-        // Année dynamique dans le footer
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>
     
